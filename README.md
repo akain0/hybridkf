@@ -84,6 +84,12 @@ predict: Predicts the state of an object based on the current state and input.
 measurement_update: Updates the state estimate based on noisy observations.
 execute_hybrid_kf: Executes the Hybrid Kalman Filter algorithm for the specified number of time steps.
 
+## Output Examples
+### Linear state evolution (linear motion), nonlinear timesteps
+![image](https://github.com/akain0/hybridkf/assets/48894841/4ca9cbb7-01dd-45e6-83a8-5e967fe175d1)
+### Nonlinear state evolution (nonlinear motion), nonlinear timesteps
+![image](https://github.com/akain0/hybridkf/assets/48894841/b45c34c0-055e-4897-84ac-01c7d930bd02)
+
 ## Contributing
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on GitHub.
 
