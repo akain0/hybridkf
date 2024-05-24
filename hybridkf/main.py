@@ -249,3 +249,4 @@ class HybridKalmanFilter:
                 axs[idx].set_ylabel("Position")
                 axs[idx].set_title(f"True and Estimated Positions for Object {id}")
                 axs[idx].legend()
+            plt.show()
