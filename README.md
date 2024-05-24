@@ -56,33 +56,33 @@ B=0, linear_timesteps=True, timestep_var=0.1, linear_motion_x_factor=2, linear_m
 nonlinear_motion_x_factor=6, nonlinear_motion_y_factor=6, seed=42)
 ```
 #### Parameters
-dt: Time step for state prediction.
-noise_std: Noise standard deviation for observation Gaussian distributions.
-noise_covariance_factor: Factor to scale the noise covariance matrix.
-n: Number of observations/objects to generate.
-max_x: Maximum x coordinate for state estimation.
-max_y: Maximum y coordinate for state estimation.
-motion_type: Type of motion model ('linear' or 'nonlinear').
-verbose: Verbosity mode (True or False) - view all true, noisy, and estimated measurements for all observations at each time step.
-state_transition_factor: Factor to scale the state transition matrix.
-process_noise_covariance_factor: Factor to scale the process noise covariance matrix.
-u: Control input.
-P_init: Initial uncertainty weights matrix.
-B: Input control matrix.
-linear_timesteps: Flag indicating whether time steps are linear (True) or nonlinear (False).
-timestep_var: Variance of time steps.
-linear_motion_x_factor: Factor to scale linear motion in the x direction.
-linear_motion_y_factor: Factor to scale linear motion in the y direction.
-nonlinear_motion_x_factor: Factor to scale nonlinear motion in the x direction.
-nonlinear_motion_y_factor: Factor to scale nonlinear motion in the y direction.
-seed: Random seed for reproducibility.
+- dt: Time step for state prediction.
+- noise_std: Noise standard deviation for observation Gaussian distributions.
+- noise_covariance_factor: Factor to scale the noise covariance matrix.
+- n: Number of observations/objects to generate.
+- max_x: Maximum x coordinate for state estimation.
+- max_y: Maximum y coordinate for state estimation.
+- motion_type: Type of motion model ('linear' or 'nonlinear').
+- verbose: Verbosity mode (True or False) - view all true, noisy, and estimated measurements for all observations at each time step.
+- state_transition_factor: Factor to scale the state transition matrix.
+- process_noise_covariance_factor: Factor to scale the process noise covariance matrix.
+- u: Control input.
+- P_init: Initial uncertainty weights matrix.
+- B: Input control matrix.
+- linear_timesteps: Flag indicating whether time steps are linear (True) or nonlinear (False).
+- timestep_var: Variance of time steps.
+- linear_motion_x_factor: Factor to scale linear motion in the x direction.
+- linear_motion_y_factor: Factor to scale linear motion in the y direction.
+- nonlinear_motion_x_factor: Factor to scale nonlinear motion in the x direction.
+- nonlinear_motion_y_factor: Factor to scale nonlinear motion in the y direction.
+- seed: Random seed for reproducibility.
 
 #### Methods
-generate_true_positions: Generates random true positions for objects.
-generate_noisy_observations: Simulates noisy observations based on true positions.
-predict: Predicts the state of an object based on the current state and input.
-measurement_update: Updates the state estimate based on noisy observations.
-execute_hybrid_kf: Executes the Hybrid Kalman Filter algorithm for the specified number of time steps.
+- generate_true_positions: Generates random true positions for objects, outputs a dictionary with simulated objects where the keys are ids and values are pairs of coordinates.
+- generate_noisy_observations: Simulates noisy observations based on generated true positions.
+- predict: Predicts the state of an object based on the current state and input.
+- measurement_update: Updates the state estimate based on noisy observations.
+- execute_hybrid_kf: Executes the Hybrid Kalman Filter algorithm for the specified number of time steps.
 
 ## Output Examples
 ### Linear state evolution (linear motion), nonlinear timesteps
