@@ -25,7 +25,6 @@ pip install hybridkf
 Here is a simple example demonstrating how to use the hybridkf package for state estimation:
 
 ```python
-Copy code
 from hybridkf import HybridKalmanFilter
 ```
 
