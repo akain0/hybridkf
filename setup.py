@@ -12,7 +12,5 @@ setup(
         'numpy',
         'scipy',
         'matplotlib',
-        'random',
-        'math'
     ],
 )
