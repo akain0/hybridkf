@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='hybridkf',
-    version='1.0.41',
+    version='1.0.42',
     packages=find_packages(),
     description='''An advanced implementation of the Kalman filter that handles and processes (pragmatic) continuous time-model state observations with discrete time-measurements for state estimation.'''
     ,
